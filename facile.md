@@ -3,8 +3,30 @@ https://coursehunters.net/course/codedojo-nodejs
 ### Сет #1 [1-14]  "Теория"
  > Общая информация, знакомство с платформой Node, адаптирование в среду ноды
 
+JS: нативные объекты и среды, Brawser API, Node API  
+REPL: Read Evaluate Print Loop  
 
+Описание индексов стабильности(0 - "Deprecated", 1 - "Experimental", 2 - "Stable") и Deprecated API, https://nodejs.org/en/docs/  
 
+**global** - глобальный объект, особенности областей видимости у файлов/модулей  
+
+**process** - объект процесса и его основные методы и свойства, **стандартный I\O**
+
+**Buffer** - работа с объектом буффер и операции в которых с ним приходится работать, способы/методы работы с buffer  
+
+Таймеры **setTimeout(callback, waitTimeout)** и **setInterval(callback, waitInterval)**  
+
+Модули в Ноде: их подключение, особенности, зачем нужны,  
+работа на примере с модулем `path`  
+
+Модуль `fs` для работы с файловой системой:
+ - синхронные и асинхронные методы, 
+ - чтение директорий,
+ - чтение файлов, 
+ - запись файлов: методы `fs.writeFile(file, content, callback)` и `fs.appendFile(file, appendContent, callback)`, 
+ - наблюдение за зименениями файлов/директорий, метод `fs.watch(dest, callback)`,
+ - способ обработки ошибок при работе с событиями  
+ 
 
 
 
