@@ -76,14 +76,15 @@ process.on('exit', () => stdout.write('\n\nbye-bye('))
  >__`Math.floor(val)`__  
  >__`process.exit()`__  
   
- >`const path = require('path');`  
- >`console.log(path.basename(__filename));`  
- >`console.log(path.basename(__dirname));`  
+ >`const path = require('path');` 
+
+ >__`console.log(path.basename(__filename));`__  
+ >__`console.log(path.basename(__dirname));`__  
   
- >`console.log(path.join(__dirname, 'www', 'files', 'uploads'))`  
+ >__`console.log(path.join(__dirname, 'www', 'files', 'uploads'))`__  
   
   
- >`const fs = require('fs')`  
+ >__`const fs = require('fs')`__  
  >`const contents = fs.readdirSync(__dirname)` - синхронное чтение директории  
  >Асинхронное чтение директороии  
 
