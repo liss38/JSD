@@ -3,10 +3,10 @@ https://coursehunters.net/course/codedojo-nodejs
 ### Сет #1 [1-14]  "Теория"
  > Общая информация, знакомство с платформой Node, адаптирование в среду ноды
 
-JS: нативные объекты и среды, Brawser API, Node API  
-REPL: Read Evaluate Print Loop  
+**JS:** нативные объекты и среды, Brawser API, Node API  
+**REPL:** Read Evaluate Print Loop  
 
-Описание индексов стабильности(0 - "Deprecated", 1 - "Experimental", 2 - "Stable") и Deprecated API, https://nodejs.org/en/docs/  
+**Индексы стабильности**(0 - "Deprecated", 1 - "Experimental", 2 - "Stable") и Deprecated API, https://nodejs.org/en/docs/  
 
 **global** - глобальный объект, особенности областей видимости у файлов/модулей  
 
@@ -16,17 +16,17 @@ REPL: Read Evaluate Print Loop
 
 Таймеры **setTimeout(callback, waitTimeout)** и **setInterval(callback, waitInterval)**  
 
-Модули в Ноде: их подключение, особенности, зачем нужны,  
+**Модули в Ноде:** их подключение, особенности, зачем нужны,  
 работа на примере с модулем `path`  
 
-Модуль `fs` для работы с файловой системой:
+Модуль __`fs`__ для работы с файловой системой:
  - синхронные и асинхронные методы, 
  - чтение директорий,
  - чтение файлов, 
- - запись файлов: методы `fs.writeFile(file, content, callback)` и `fs.appendFile(file, appendContent, callback)`, 
- - наблюдение за зименениями файлов/директорий, метод `fs.watch(dest, callback)`,
+ - запись файлов: методы __`fs.writeFile(file, content, callback)`__ и __`fs.appendFile(file, appendContent, callback)`__, 
+ - наблюдение за зименениями файлов/директорий, метод __`fs.watch(dest, callback)`__,
  - способ обработки ошибок при работе с событиями  
- 
+
 
 
 
