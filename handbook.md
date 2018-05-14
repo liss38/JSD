@@ -57,35 +57,35 @@ process.on('exit', () => stdout.write('\n\nbye-bye('))
  console.log(buffer);
  ```
 
- >`buffer.toString()` приведет содержимое буффера к строке в utf-8 формате
- >`Buffer.from(source, charset)` - `source` - содержимое буффера, `charset` - кодировка символов, по умолчанию используется utf-8
- >`buffer.toJSON()`
- >`buffer[0] = 77` - можно как с массивом обращаться к элементу через его индекс
- >`buffer.write('M')` - перезаписывает значение буффера
- >`buffer.slice(0, 4).toString()` - вернет первые четыре элемента буффера
- >`buffer.length` - вернет размер буффера
- >`Buffer.alloc(256)` - создаст буффер в 256 байт
-
-
- >`setTimeout(callback, waitTimeout)`
- >`setInterval(callback, waitInterval)`
-
- >`process.stdout.clearLine()`
- >`process.stdout.cursorTo(0)`
- >`process.stdout.write('text').toString()`
- >`Math.floor(val)`
- >`process.exit()`
-
- >`const path = require('path');`
- >`console.log(path.basename(__filename));`
- >`console.log(path.basename(__dirname));`
-
- >`console.log(path.join(__dirname, 'www', 'files', 'uploads'))`
-
-
- >`const fs = require('fs')`
- >`const contents = fs.readdirSync(__dirname)` - синхронное чтение директории
- >Асинхронное чтение директороии
+ >`buffer.toString()` приведет содержимое буффера к строке в utf-8 формате  
+ >`Buffer.from(source, charset)` - `source` - содержимое буффера, `charset` - кодировка символов, по умолчанию используется utf-8  
+ >`buffer.toJSON()`  
+ >`buffer[0] = 77` - можно как с массивом обращаться к элементу через его индекс  
+ >`buffer.write('M')` - перезаписывает значение буффера  
+ >`buffer.slice(0, 4).toString()` - вернет первые четыре элемента буффера  
+ >`buffer.length` - вернет размер буффера  
+ >`Buffer.alloc(256)` - создаст буффер в 256 байт  
+  
+  
+ >`setTimeout(callback, waitTimeout)`  
+ >`setInterval(callback, waitInterval)`  
+  
+ >__`process.stdout.clearLine()`__  
+ >__`process.stdout.cursorTo(0)`__  
+ >__`process.stdout.write('text').toString()`__  
+ >__`Math.floor(val)`__  
+ >__`process.exit()`__  
+  
+ >`const path = require('path');`  
+ >`console.log(path.basename(__filename));`  
+ >`console.log(path.basename(__dirname));`  
+  
+ >`console.log(path.join(__dirname, 'www', 'files', 'uploads'))`  
+  
+  
+ >`const fs = require('fs')`  
+ >`const contents = fs.readdirSync(__dirname)` - синхронное чтение директории  
+ >Асинхронное чтение директороии  
 
  ```js
  	console.log('Reading directory');
@@ -110,9 +110,8 @@ process.on('exit', () => stdout.write('\n\nbye-bye('))
 	});
 ```
 
- >__`fs.writeFile(file, content, callback)`__ - (пере-)записывает в файл с названием `file` данные/содержимое из `content`, в `callback(err)` обрабатывается ошибка и успех
- >
- >__`fs.appendFile(file, appendContent, callback)`__ - добавляет содержимое из `appendContent` в конец файла `file`, `callback(err)` ...
+ >__`fs.writeFile(file, content, callback)`__ - (пере-)записывает в файл с названием `file` данные/содержимое из `content`, в `callback(err)` обрабатывается ошибка и успех  
+ >__`fs.appendFile(file, appendContent, callback)`__ - добавляет содержимое из `appendContent` в конец файла `file`, `callback(err)` ...  
 
  >наблюдение за изменениями в файлах/директориях и обработка ошибок при работе с событиями
 
