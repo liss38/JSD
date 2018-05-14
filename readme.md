@@ -2,6 +2,9 @@
 https://coursehunters.net/course/codedojo-nodejs
 
 
+![dashboard](jsd1.jpg)
+
+
 ## Содержание:
 
 ### Сет #1 [1-14]
@@ -38,3 +41,4 @@ https://coursehunters.net/course/codedojo-nodejs
 
  - [handbook.md](handbook.md "справочник") - быстрый справочник
  - [facile.md](facile.md "краткое содержание блоков") - краткое содержание блоков
+ - [features.md](features.md "список функциональных фич и задач") - список функциональных фич и задач, которые нужно уметь делать
