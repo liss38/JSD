@@ -65,3 +65,57 @@ process.on('exit', () => stdout.write('\n\nbye-bye('))
  >`buffer.slice(0, 4).toString()` - вернет первые четыре элемента буффера
  >`buffer.length` - вернет размер буффера
  >`Buffer.alloc(256)` - создаст буффер в 256 байт
+
+
+ >`setTimeout(callback, waitTimeout)`
+ >`setInterval(callback, waitInterval)`
+
+ >`process.stdout.clearLine()`
+ >`process.stdout.cursorTo(0)`
+ >`process.stdout.write('text').toString()`
+ >`Math.floor(val)`
+ >`process.exit()`
+
+ >`const path = require('path');`
+ >`console.log(path.basename(__filename));`
+ >`console.log(path.basename(__dirname));`
+
+ >`console.log(path.join(__dirname, 'www', 'files', 'uploads'))`
+
+
+ >`const fs = require('fs')`
+ >`const contents = fs.readdirSync(__dirname)` - синхронное чтение директории
+ >Асинхронное чтение директороии
+
+ ```js
+ 	console.log('Reading directory');
+
+ 	fs.readdir(__dirname, (error, contents) => {
+ 		if(error) return console.log(error);
+ 		console.log(contents);
+ 	});
+
+ 	console.log('Finished reading');
+ ```
+
+ >По умолчанию используют асинхронные методы, чтобы не блокировать процесс выполнения программы
+
+ >Чтение файла
+
+```js
+	fs.readFile('note.md', (err, data) => {
+		if(err) return console.log('Обработка ошибки');
+
+		console.log(data.toString()); // т.к. используется буффер
+	});
+```
+
+ - `fs.writeFile(file, content, callback)` - (пере-)записывает в файл с названием `file` данные/содержимое из `content`, в `callback(err)` обрабатывается ошибка и успех
+ - `fs.appendFile(file, appendContent, callback)` - добавляет содержимое из `appendContent` в конец файла `file`, `callback(err)` ...
+
+ >наблюдение за изменениями в файлах/директориях и обработка ошибок при работе с событиями
+
+ ```js
+	const watcher = fs.watch(__dirname, (event, filename) => console.log(`${filename}  ->  ${event}`));
+	watcher.on('error', (error) => console.log(error));
+ ```
