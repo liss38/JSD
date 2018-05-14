@@ -110,8 +110,8 @@ process.on('exit', () => stdout.write('\n\nbye-bye('))
 	});
 ```
 
- > - `fs.writeFile(file, content, callback)` - (пере-)записывает в файл с названием `file` данные/содержимое из `content`, в `callback(err)` обрабатывается ошибка и успех
- > - `fs.appendFile(file, appendContent, callback)` - добавляет содержимое из `appendContent` в конец файла `file`, `callback(err)` ...
+ >__`fs.writeFile(file, content, callback)`__ - (пере-)записывает в файл с названием `file` данные/содержимое из `content`, в `callback(err)` обрабатывается ошибка и успех
+ >__`fs.appendFile(file, appendContent, callback)`__ - добавляет содержимое из `appendContent` в конец файла `file`, `callback(err)` ...
 
  >наблюдение за изменениями в файлах/директориях и обработка ошибок при работе с событиями
 
