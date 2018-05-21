@@ -3,7 +3,7 @@ https://coursehunters.net/course/codedojo-nodejs
 ### Сет #1 [1-14]  "Теория"
  > Общая информация, знакомство с платформой Node, адаптирование в среду ноды
 
-**JS:** нативные объекты и среды, Brawser API, Node API  
+**JS:** нативные объекты и среды, Browser API, Node API  
 **REPL:** Read Evaluate Print Loop  
 
 **Индексы стабильности**(0 - "Deprecated", 1 - "Experimental", 2 - "Stable") и Deprecated API, https://nodejs.org/en/docs/  
