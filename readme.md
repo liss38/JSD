@@ -31,7 +31,7 @@ https://coursehunters.net/course/codedojo-nodejs
 
 
 ### Сет #5 [38-43]
- > 
+ > Работа с модулями `http`, `fs`, `path`: http-сервер, файл-сервер, создание простого api-сервера, postserver
 
 
 ### Сет #6 [43-50]
