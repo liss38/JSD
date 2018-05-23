@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>post form</title>
+</head>
+<body>
+	<form action="/" method="post">
+		<div>
+			<input type="text" name="title">
+		</div>
+		<div>
+			<textarea name="content" id="" cols="30" rows="10"></textarea>
+		</div>
+		<div>
+			<input type="submit" value="Создать">
+		</div>
+	</form>
+</body>
+</html>
