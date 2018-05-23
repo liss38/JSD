@@ -20,7 +20,8 @@ https://coursehunters.net/course/codedojo-nodejs
 
 ### Сет #3 [22-32]
  > Работа с модулями: exports/module.exports, модуль-директория(index.js), кэширование модуля, 
- > Ссобытия: EventEmitter, 
+ > События: EventEmitter, 
+ > Потоки: запись, чтение, канал
 
 
 ### Сет #4 [33-37]
