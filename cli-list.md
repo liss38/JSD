@@ -11,9 +11,10 @@
 **`> ember generate template application`** - создаст новый шаблон `application`  
 **`> ember generate route scientists`** - создаст новый роут/маршрут `scientists`  
 **`> ember generate component people-list`** - создаст новый компонент `people-list`  
+**`> ember generate model rental`** - создаст новую модель `rental`  
 **`> ember generate acceptance-test list-rentals`** - сгенерирует новый приёмочный тест с названием `list-rentals`  
 **`> ember test --server`** - запустит набор тестов  
-**`> `** -   
+**`> ember generate helper rental-property-type`** - сгенерирует хелпер для `rental-property-type`(создаст хэлпер и его тест)  
 **`> `** -   
 **`> `** -   
 
