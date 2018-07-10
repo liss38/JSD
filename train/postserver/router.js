@@ -9,6 +9,18 @@ const routesList = {
 	'/secret': path.join(_STATIC, 'secret.html'),
 };
 
+function parseBody(body) {
+	let result = {};
+	const keyValuePairs = body.split('&');
+
+	keyValuePairs.forEach((item) => {
+		const [key, value] = item.split('=');
+		result[key] = value;
+	});
+
+	return result;
+}
+
 function authentication(login, password) {
 	return login === 'admin' && password === 'admin';
 }
@@ -44,7 +56,16 @@ module.exports.router = function (params, done) {
 		// returnPage = ;
 		done(getPage(route));
 	} else if(method === 'POST') {
-		console.log('POST');
+		const authData = parseBody(payload);
+		const isAccess = authentication(authData['login'], authData['password']);
+		
+		console.log('POST', authData, isAccess);
+
+		if(isAccess) {
+			done(getPage('/secret'));
+		} else {
+			done(getPage('/auth'));
+		}
 	}
 	// let templatePage = routesList[route] || '404';
 

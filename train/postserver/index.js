@@ -7,15 +7,13 @@ const _HOST = '127.0.0.1';
 
 const router = require('./router');
 
-function parseBody(body) {
-	return body;
-}
+
 
 http.createServer((req, res) => {
 	const route = req.url;
 	const method = req.method;
 
-	const payload = '';
+	let payload = '';
 
 	req.on('data', data => payload += data);
 	req.on('end', () => router.router({ route, method, payload }, (page) => {
