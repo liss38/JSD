@@ -9,6 +9,10 @@ const _HOST = '127.0.0.1';
 // Routes
 const { public, home, search, notFound } = require('./routes');
 
+// render
+const render = require('./lib/render');
+http.ServerResponse.prototype.render = render;
+
 http.createServer((req, res) => {
 	if(req.url.match(/\.(html|css|js|png)$/)) { // маршрут для статических файлов
 		
