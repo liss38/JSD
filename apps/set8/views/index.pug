@@ -1,0 +1,9 @@
+extends layout
+
+block main
+	if todos
+		ul.todos-list
+			for todo in todos
+				li.todos-list__item(class={'todos-list__item--completed': todo.completed})= todo.title
+	else
+		p Список пуст
